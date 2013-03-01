@@ -1,0 +1,5 @@
+/*
+ * Class Multimedia configuration file
+ */
+name:"multimedia",version:"0.1",type:"class",role1:"0",role2:"0",role3:"0",role_group:"1",tbl_name:"multimedia",instance:"yes",description:"Gestore di contenuti multimediali",removable:"yes",folders:"contents/multimedia"
+
