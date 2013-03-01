@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Gino Multimedia:  File sorgente class.multimediaSlider.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logotto_100px.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Gino Multimedia
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Modulo di gestione di contenuti multimediali per Gino CMS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Gruppi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">class.multimediaSlider.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="class_8multimedia_slider_8php.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmultimedia_slider.html" title="Classe che rappresenta uno slider di immagini di una galleria.">multimediaSlider</a> <span class="keyword">extends</span> propertyObject {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#aefaf43fa290523c54179f350e96f76c0">   39</a></span>&#160;        <span class="keyword">private</span> <a class="code" href="classmultimedia_slider.html#aefaf43fa290523c54179f350e96f76c0">$_controller</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#aef90216fe672ea0de8f68ed86068b1e5">   40</a></span>&#160;        <span class="keyword">private</span> <a class="code" href="classmultimedia_slider.html#aef90216fe672ea0de8f68ed86068b1e5">$_transition_effects</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#a5b4fb2c5a71909aee5e1ea3f4176afcf">   41</a></span>&#160;        <span class="keyword">private</span> <a class="code" href="classmultimedia_slider.html#a5b4fb2c5a71909aee5e1ea3f4176afcf">$_image_orders</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#abbb46e226adff52bcc9f2aed28d3af8d">   43</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classmultimedia_slider.html#abbb46e226adff52bcc9f2aed28d3af8d">$tbl_slider</a> = <span class="stringliteral">&quot;multimedia_slider&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#a127f7a45f17a3560fc6985f089875811">   51</a></span>&#160;        <span class="keyword">function</span> <a class="code" href="classmultimedia_slider.html#a127f7a45f17a3560fc6985f089875811" title="Costruttore.">__construct</a>($id, $instance) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                $this-&gt;_controller = $instance;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                $this-&gt;_tbl_data = self::$tbl_slider;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                $this-&gt;_fields_label = array(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="stringliteral">&#39;tpl&#39;</span>=&gt;array(_(<span class="stringliteral">&quot;Template&quot;</span>), _(<span class="stringliteral">&#39;Inserire lo slider con la stringa {{ slider }}&#39;</span>)),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="stringliteral">&#39;image_order&#39;</span>=&gt;_(<span class="stringliteral">&#39;Ordinamento immagini&#39;</span>),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        <span class="stringliteral">&#39;gallery&#39;</span>=&gt;_(<span class="stringliteral">&#39;Galleria&#39;</span>),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        <span class="stringliteral">&#39;animation_effect_duration&#39;</span>=&gt;_(<span class="stringliteral">&#39;Durata effetto di animazione (ms)&#39;</span>),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="stringliteral">&#39;auto_play&#39;</span>=&gt;_(<span class="stringliteral">&#39;Auto play&#39;</span>),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        <span class="stringliteral">&#39;show_ctrls&#39;</span>=&gt;_(<span class="stringliteral">&#39;Mostra controlli navigazione&#39;</span>),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        <span class="stringliteral">&#39;mouseout_hide_ctrls&#39;</span>=&gt;_(<span class="stringliteral">&#39;Nascondi controlli navigazione al mouseout&#39;</span>),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        <span class="stringliteral">&#39;transition_effect&#39;</span>=&gt;_(<span class="stringliteral">&#39;Effetto di transizione&#39;</span>),</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        <span class="stringliteral">&#39;animation_interval&#39;</span>=&gt;_(<span class="stringliteral">&#39;Intervallo immagini successive (ms)&#39;</span>),</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <span class="stringliteral">&#39;pause_interval_mouseover&#39;</span>=&gt;_(<span class="stringliteral">&#39;Pausa dell\&#39;intervallo al mouseover&#39;</span>),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <span class="stringliteral">&#39;slices&#39;</span>=&gt;_(<span class="stringliteral">&#39;Numero di slices&#39;</span>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                $this-&gt;_image_orders = array(</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        1 =&gt; _(<span class="stringliteral">&#39;random&#39;</span>),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        2 =&gt; _(<span class="stringliteral">&#39;data decrescente&#39;</span>),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                        3 =&gt; _(<span class="stringliteral">&#39;data crescente&#39;</span>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                $this-&gt;_transition_effects = array(</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        1=&gt;<span class="stringliteral">&quot;fade&quot;</span>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        2=&gt;<span class="stringliteral">&quot;fold&quot;</span>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        3=&gt;<span class="stringliteral">&quot;random&quot;</span>,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                        4=&gt;<span class="stringliteral">&quot;horiz sliceLeftDown&quot;</span>,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        5=&gt;<span class="stringliteral">&quot;horiz sliceLeftUp&quot;</span>,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                        6=&gt;<span class="stringliteral">&quot;horiz sliceLeftRightDown&quot;</span>,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                        7=&gt;<span class="stringliteral">&quot;horiz sliceLeftRightUp&quot;</span>,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                        8=&gt;<span class="stringliteral">&quot;horiz sliceRightDown&quot;</span>,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        9=&gt;<span class="stringliteral">&quot;horiz sliceRightUp&quot;</span>,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        10=&gt;<span class="stringliteral">&quot;horiz wipeDown&quot;</span>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        11=&gt;<span class="stringliteral">&quot;horiz wipeUp&quot;</span>,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        12=&gt;<span class="stringliteral">&quot;vert sliceDownLeft&quot;</span>,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        13=&gt;<span class="stringliteral">&quot;vert sliceDownRight&quot;</span>,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                        14=&gt;<span class="stringliteral">&quot;vert sliceUpDownLeft&quot;</span>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                        15=&gt;<span class="stringliteral">&quot;vert sliceUpDownRight&quot;</span>,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        16=&gt;<span class="stringliteral">&quot;vert sliceUpLeft&quot;</span>,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        17=&gt;<span class="stringliteral">&quot;vert sliceUpRight&quot;</span>,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        18=&gt;<span class="stringliteral">&quot;vert wipeLeft&quot;</span>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        19=&gt;<span class="stringliteral">&quot;vert wipeRight&quot;</span>            </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                parent::__construct($id);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                $this-&gt;_model_label = $this-&gt;<span class="keywordtype">id</span> ? $this-&gt;<span class="keywordtype">id</span> : <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#a6a825b09743bc2e7b2ab9bf3025ba567">  111</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classmultimedia_slider.html#a6a825b09743bc2e7b2ab9bf3025ba567" title="Sovrascrive la struttura di default.">structure</a>($id) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                $structure = parent::structure($id);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                $structure[<span class="stringliteral">&#39;auto_play&#39;</span>] = <span class="keyword">new</span> booleanField(array(</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                        <span class="stringliteral">&#39;name&#39;</span>=&gt;<span class="stringliteral">&#39;auto_play&#39;</span>, </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        <span class="stringliteral">&#39;required&#39;</span>=&gt;<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        <span class="stringliteral">&#39;label&#39;</span>=&gt;$this-&gt;_fields_label[<span class="stringliteral">&#39;auto_play&#39;</span>], </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        <span class="stringliteral">&#39;enum&#39;</span>=&gt;array(1 =&gt; _(<span class="stringliteral">&#39;si&#39;</span>), 0 =&gt; _(<span class="stringliteral">&#39;no&#39;</span>)), </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                        <span class="stringliteral">&#39;default&#39;</span>=&gt;0,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        <span class="stringliteral">&#39;value&#39;</span>=&gt;$this-&gt;auto_play </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                ));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                $structure[<span class="stringliteral">&#39;show_ctrls&#39;</span>] = <span class="keyword">new</span> booleanField(array(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        <span class="stringliteral">&#39;name&#39;</span>=&gt;<span class="stringliteral">&#39;show_ctrls&#39;</span>, </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        <span class="stringliteral">&#39;required&#39;</span>=&gt;<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                        <span class="stringliteral">&#39;label&#39;</span>=&gt;$this-&gt;_fields_label[<span class="stringliteral">&#39;show_ctrls&#39;</span>], </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                        <span class="stringliteral">&#39;enum&#39;</span>=&gt;array(1 =&gt; _(<span class="stringliteral">&#39;si&#39;</span>), 0 =&gt; _(<span class="stringliteral">&#39;no&#39;</span>)), </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                        <span class="stringliteral">&#39;default&#39;</span>=&gt;0,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                        <span class="stringliteral">&#39;value&#39;</span>=&gt;$this-&gt;show_ctrls </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                ));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                $structure[<span class="stringliteral">&#39;mouseout_hide_ctrls&#39;</span>] = <span class="keyword">new</span> booleanField(array(</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                        <span class="stringliteral">&#39;name&#39;</span>=&gt;<span class="stringliteral">&#39;mouseout_hide_ctrls&#39;</span>, </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        <span class="stringliteral">&#39;required&#39;</span>=&gt;<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                        <span class="stringliteral">&#39;label&#39;</span>=&gt;$this-&gt;_fields_label[<span class="stringliteral">&#39;mouseout_hide_ctrls&#39;</span>], </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                        <span class="stringliteral">&#39;enum&#39;</span>=&gt;array(1 =&gt; _(<span class="stringliteral">&#39;si&#39;</span>), 0 =&gt; _(<span class="stringliteral">&#39;no&#39;</span>)), </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                        <span class="stringliteral">&#39;default&#39;</span>=&gt;0,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                        <span class="stringliteral">&#39;value&#39;</span>=&gt;$this-&gt;mouseout_hide_ctrls </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                ));</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                $structure[<span class="stringliteral">&#39;pause_interval_mouseover&#39;</span>] = <span class="keyword">new</span> booleanField(array(</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                        <span class="stringliteral">&#39;name&#39;</span>=&gt;<span class="stringliteral">&#39;pause_interval_mouseover&#39;</span>, </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                        <span class="stringliteral">&#39;required&#39;</span>=&gt;<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                        <span class="stringliteral">&#39;label&#39;</span>=&gt;$this-&gt;_fields_label[<span class="stringliteral">&#39;pause_interval_mouseover&#39;</span>], </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                        <span class="stringliteral">&#39;enum&#39;</span>=&gt;array(1 =&gt; _(<span class="stringliteral">&#39;si&#39;</span>), 0 =&gt; _(<span class="stringliteral">&#39;no&#39;</span>)), </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                        <span class="stringliteral">&#39;default&#39;</span>=&gt;0,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        <span class="stringliteral">&#39;value&#39;</span>=&gt;$this-&gt;pause_interval_mouseover </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                ));</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                $structure[<span class="stringliteral">&#39;gallery&#39;</span>] = <span class="keyword">new</span> foreignKeyField(array(</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                        <span class="stringliteral">&#39;name&#39;</span>=&gt;<span class="stringliteral">&#39;gallery&#39;</span>, </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                        <span class="stringliteral">&#39;value&#39;</span>=&gt;$this-&gt;gallery, </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        <span class="stringliteral">&#39;label&#39;</span>=&gt;$this-&gt;_fields_label[<span class="stringliteral">&#39;gallery&#39;</span>], </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        <span class="stringliteral">&#39;lenght&#39;</span>=&gt;11, </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        <span class="stringliteral">&#39;fkey_table&#39;</span>=&gt;<a class="code" href="classmultimedia_gallery.html#a9c6e5733e0cecca76989954070a5a2c9">multimediaGallery::$tbl_gallery</a>, </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        <span class="stringliteral">&#39;fkey_id&#39;</span>=&gt;<span class="stringliteral">&#39;id&#39;</span>, </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                        <span class="stringliteral">&#39;fkey_field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>, </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                        <span class="stringliteral">&#39;fkey_where&#39;</span>=&gt;<span class="stringliteral">&#39;instance=\&#39;&#39;</span>.$this-&gt;_controller-&gt;getInstance().<span class="charliteral">&#39;\&#39;&#39;</span>, </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                        <span class="stringliteral">&#39;fkey_order&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                ));</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                $structure[<span class="stringliteral">&#39;image_order&#39;</span>] = <span class="keyword">new</span> enumField(array(</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                        <span class="stringliteral">&#39;name&#39;</span>=&gt;<span class="stringliteral">&#39;image_order&#39;</span>, </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        <span class="stringliteral">&#39;required&#39;</span>=&gt;<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                        <span class="stringliteral">&#39;label&#39;</span>=&gt;$this-&gt;_fields_label[<span class="stringliteral">&#39;image_order&#39;</span>], </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                        <span class="stringliteral">&#39;enum&#39;</span>=&gt;$this-&gt;_image_orders, </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                        <span class="stringliteral">&#39;default&#39;</span>=&gt;1,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                        <span class="stringliteral">&#39;value&#39;</span>=&gt;$this-&gt;image_order </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                ));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                $structure[<span class="stringliteral">&#39;transition_effect&#39;</span>] = <span class="keyword">new</span> enumField(array(</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                        <span class="stringliteral">&#39;name&#39;</span>=&gt;<span class="stringliteral">&#39;transition_effect&#39;</span>, </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                        <span class="stringliteral">&#39;required&#39;</span>=&gt;<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                        <span class="stringliteral">&#39;label&#39;</span>=&gt;$this-&gt;_fields_label[<span class="stringliteral">&#39;transition_effect&#39;</span>], </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                        <span class="stringliteral">&#39;enum&#39;</span>=&gt;$this-&gt;_transition_effects, </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        <span class="stringliteral">&#39;default&#39;</span>=&gt;1,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                        <span class="stringliteral">&#39;value&#39;</span>=&gt;$this-&gt;transition_effect </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                ));</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">return</span> $structure;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#a62b819a72b92a53c9a7e6dc35772b584">  191</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classmultimedia_slider.html#a62b819a72b92a53c9a7e6dc35772b584" title="Restituisce l&#39;effetto e l&#39;orientazione da usare per il codice js.">getEffectOrientation</a>() {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;#(horiz|vert) (.*)#&quot;</span>, $this-&gt;_transition_effects[$this-&gt;transition_effect], $matches)) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                        $effect = $matches[2];</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                        $orientation = $matches[1] == <span class="stringliteral">&#39;horiz&#39;</span> ? <span class="stringliteral">&quot;horizontal&quot;</span> : <span class="stringliteral">&quot;vertical&quot;</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                        $effect = $this-&gt;_transition_effects[$this-&gt;transition_effect];</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                        $orientation = <span class="stringliteral">&#39;horizontal&#39;</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">return</span> array($effect, $orientation);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#a533b9b96fb847db54994c7502f6a81d6">  211</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="classmultimedia_slider.html#a533b9b96fb847db54994c7502f6a81d6" title="Istanze legate all&#39;stanza del controller.">getFromInstance</a>($controller) {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                $db = db::instance();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                $rows = $db-&gt;select(<span class="stringliteral">&#39;id&#39;</span>, self::$tbl_slider, <span class="stringliteral">&quot;instance=&#39;&quot;</span>.$controller-&gt;getInstance().<span class="stringliteral">&quot;&#39;&quot;</span>, null, null);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <span class="keywordflow">if</span>($rows &amp;&amp; count($rows)) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classmultimedia_slider.html" title="Classe che rappresenta uno slider di immagini di una galleria.">multimediaSlider</a>($rows[0][<span class="stringliteral">&#39;id&#39;</span>], $controller);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classmultimedia_slider.html" title="Classe che rappresenta uno slider di immagini di una galleria.">multimediaSlider</a>(null, $controller);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="code" href="classmultimedia_slider.html#a483b8139fe49ce0d9f59255c602b35c6">  230</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classmultimedia_slider.html#a483b8139fe49ce0d9f59255c602b35c6" title="Restituisce le immagini dello slider.">getItems</a>($controller, $private) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                $res = array();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">if</span>(!$this-&gt;<span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                        <span class="keywordflow">return</span> $res;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                $gallery = <span class="keyword">new</span> <a class="code" href="classmultimedia_gallery.html" title="Classe che rappresenta una galleria multimediale (raccolta di media).">multimediaGallery</a>($this-&gt;gallery, $controller);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <span class="keywordflow">if</span>($this-&gt;image_order == 3) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                        $order = <span class="stringliteral">&#39;insertion_date ASC&#39;</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                        $order = <span class="stringliteral">&#39;insertion_date DESC&#39;</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                $items = $gallery-&gt;getItems($controller, array(</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        <span class="stringliteral">&#39;order&#39;</span> =&gt; $order,</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                        <span class="stringliteral">&#39;private&#39;</span> =&gt; $private,</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                        <span class="stringliteral">&#39;published&#39;</span> =&gt; <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                        <span class="stringliteral">&#39;where_c&#39;</span> =&gt; <span class="stringliteral">&quot;type=&#39;&quot;</span>.<a class="code" href="class__multimedia_8php.html#a4b1c2af05df3dd8c666bd40ae0fb4357">IMAGE_CHOICE</a>.<span class="stringliteral">&quot;&#39;&quot;</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                ));</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="keywordflow">if</span>($this-&gt;_image_orders == 1) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                        shuffle($items);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                <span class="keywordflow">return</span> $items;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;?&gt;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Ven 1 Mar 2013 16:32:28 per Gino Multimedia da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>
